@@ -1,0 +1,40 @@
+/* src/App.css */
+
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+body {
+  font-family: 'Vazirmatn', sans-serif; /* Use Vazir font for Persian, fallback to sans-serif */
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  direction: rtl; /* Default direction for Persian */
+}
+
+/* Set direction based on the locale */
+[dir="ltr"] body {
+    direction: ltr;
+    font-family: 'Roboto', sans-serif; /* English font (example: Roboto) */
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1; /* Allow the main content to take up remaining space */
+}
+
+/* Add more global styles here (e.g., link styles, button styles, etc.) */
+
+/* Utility Classes */
+.text-center{
+    text-align: center;
+}

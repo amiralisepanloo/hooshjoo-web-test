@@ -1,0 +1,44 @@
+/* src/pages/WelcomePage.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* ارتفاع حداقل به اندازه 80% ارتفاع صفحه باشه */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .message {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  .info{
+      font-size: 1rem;
+    margin-bottom: 30px;
+    color: #666;
+    text-align: left;
+  }
+  
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* زیرخط لینک رو برمی‌داره */
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease; /* یه transition ساده برای تغییر رنگ */
+  }
+  
+  .button:hover {
+    background-color: #3e8e41; /* وقتی موس میره روش، رنگش تیره‌تر بشه */
+  }

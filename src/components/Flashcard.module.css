@@ -1,0 +1,42 @@
+/* src/components/Flashcard.module.css */
+
+.card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; /* Needed for the 3D flip effect */
+    cursor: pointer;
+    margin-bottom: 1rem; /* Add some spacing between flashcards */
+  }
+  
+  .flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back of the card when flipped */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.8s; /* Smooth transition for the flip */
+      padding: 10px;
+      font-size: 1.2rem;
+  }
+  
+  .front {
+    background-color: #f0f0f0;
+    color: #333;
+    transform: rotateY(0deg); /* Ensure the front is initially visible */
+    z-index: 2; /* Ensure the front is on top initially */
+  }
+  
+  .back {
+    background-color: #e0e0e0;
+    color: #555;
+    transform: rotateY(180deg); /* Initially rotated to be hidden */
+  }

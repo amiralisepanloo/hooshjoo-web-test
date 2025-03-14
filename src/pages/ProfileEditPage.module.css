@@ -1,0 +1,104 @@
+/* src/pages/ProfileEditPage.module.css */
+
+.container {
+    max-width: 600px; /* حداکثر عرض فرم */
+    margin: 50px auto; /* فاصله از بالا و پایین و وسط‌چین کردن */
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* سایه ملایم */
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputGroup {
+    margin-bottom: 20px; /* فاصله بین گروه‌های ورودی */
+  }
+  
+  .inputGroup label {
+    display: block; /* برچسب‌ها بالای فیلدها قرار بگیرن */
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease; /* انیمیشن برای تغییر رنگ حاشیه */
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #4CAF50; /* وقتی فیلد انتخاب میشه، رنگ حاشیه‌اش سبز بشه */
+  }
+  
+  /* استایل برای select */
+  .inputGroup select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; /* حذف استایل پیش فرض مرورگر */
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E"); /* یه آیکون کوچیک برای select */
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      background-size: 12px;
+      padding-right: 30px; /* فاصله متن از آیکون */
+  
+  }
+  
+  .inputGroup input[type="radio"] {
+      margin-right: 5px;
+    }
+    .inputGroup label:nth-child(n+1) { /*فاصله بین هر لیبل در رادیو*/
+       margin-left: 10px;
+    }
+  .error {
+    color: red;
+    margin-top: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    .title {
+      font-size: 1.8rem;
+    }
+  
+    .input {
+      font-size: 0.9rem; /* کوچکتر کردن اندازه فونت در صفحه‌های کوچکتر */
+    }
+  }

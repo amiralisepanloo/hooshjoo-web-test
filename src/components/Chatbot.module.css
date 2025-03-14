@@ -1,0 +1,74 @@
+/* src/components/Chatbot.module.css */
+
+.chatbotContainer {
+  width: 400px; /* عرض چت‌بات */
+  height: 500px; /* ارتفاع چت‌بات */
+  border: 1px solid #ccc; /* یه حاشیه دور چت‌بات */
+  display: flex;
+  flex-direction: column; /* المان‌ها رو به صورت عمودی می‌چینه */
+  border-radius: 10px;
+  overflow: hidden; /* اگه محتوا از کادر زد بیرون، مخفی بشه */
+}
+
+.chatHeader {
+  background-color: #f0f0f0; /* رنگ پس‌زمینه عنوان */
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+
+.chatMessages {
+  flex: 1; /* این قسمت بیشترین فضا رو می‌گیره */
+  padding: 10px;
+  overflow-y: auto; /* اگه پیام‌ها زیاد شدن، اسکرول بخوره */
+  display: flex;
+  flex-direction: column; /* پیام ها زیر هم چیده بشن */
+
+}
+
+.userMessage {
+  align-self: flex-end; /* پیام کاربر سمت راست چیده بشه */
+  background-color: #dcf8c6; /* رنگ پس‌زمینه پیام کاربر */
+  padding: 8px 12px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  max-width: 70%; /* حداکثر عرض پیام */
+  word-wrap: break-word; /* اگه متن طولانی بود، شکسته بشه */
+}
+
+.botMessage {
+  align-self: flex-start; /* پیام چت‌بات سمت چپ چیده بشه */
+  background-color: #fff; /* رنگ پس‌زمینه پیام چت‌بات */
+  padding: 8px 12px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.chatInput {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.inputField {
+  flex: 1; /* فیلد ورود متن بیشترین فضا رو بگیره */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px; /* یه فاصله بین فیلد و دکمه */
+  outline: none; /* وقتی فیلد انتخاب میشه، دورش خط نیفته */
+}
+
+.sendButton {
+  background-color: #4CAF50; /* رنگ دکمه */
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* وقتی موس میره روش، شکل دست بشه */
+}
+.sendButton:hover{
+  opacity: 0.8;
+}

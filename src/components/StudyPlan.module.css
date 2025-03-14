@@ -1,0 +1,8 @@
+/* src/components/StudyPlan.module.css */
+
+.studyPlanContainer {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0; /* یه فاصله از بالا و پایین */
+  }

@@ -1,0 +1,81 @@
+/* src/components/Header.module.css */
+
+.header {
+    background-color: #007bff; /* Use a nice blue color */
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  .container {
+    max-width: 1200px; /* Limit the width for larger screens */
+    margin: 0 auto; /* Center the content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  .logo:hover{
+      text-decoration: underline;
+  }
+  
+  .nav {
+      /* (removed display: flex; and flex-direction: row; from here) */
+  }
+  
+  .navList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+      display: flex; /* Add this line back */
+      flex-direction: row; /* Add this line back */
+      gap: 1rem;
+  }
+  
+  .navLink {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .navLink:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Add a subtle hover effect */
+  }
+  
+  .logoutButton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  .logoutButton:hover{
+      background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .localeButton {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .localeButton:hover{
+      background-color: rgba(255, 255, 255, 0.3);
+  }
